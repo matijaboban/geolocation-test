@@ -1,0 +1,36 @@
+---
+ip: "10.10.10.15"
+memory: 2048
+cpus: 1
+hostname: geolocation-test.dev.matijaboban.com
+name: geolocation-test
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: "~/Sites/geolocation-test"
+      to: "/home/vagrant/geolocation-test"
+
+sites:
+    - map: geolocation-test.dev.matijaboban.com
+      to: "/home/vagrant/geolocation-test/public"
+
+databases:
+    - geolocation-test
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp

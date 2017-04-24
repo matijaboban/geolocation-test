@@ -1,0 +1,23 @@
+/vendor
+/node_modules
+/public/storage
+/public/media
+/public/js
+/public/css
+/public/build
+/public/temp
+Homestead.json
+.vagrant
+.env
+*.bak
+/resources/js/generated
+
+## Storage
+storage/*
+!storage/.gitkeep
+!storage/*/.gitkeep
+!storage/*/*/.gitkeep
+
+## Documentation
+/public/docs/
+!/public/docs/.gitkeep
